@@ -1,0 +1,11 @@
+.p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+}
+
+.medium {
+	font-weight: 500;
+}
