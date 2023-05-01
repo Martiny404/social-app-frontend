@@ -1,5 +1,6 @@
 :root {
 	--primary: #2d81e0;
+	--light-primary: #2688eb;
 	--simple-blue: #2688eb;
 	--light-green: #4bb34b;
 	--dark-green: #389238;
@@ -8,6 +9,10 @@
 	--light-gray: rgba(0, 28, 61, 0.05);
 	--steel-gray-200: rgba(84, 88, 92, 0.12);
 	--black: #000;
+	--placeholder: #6d7885;
+	--light-pink: #faebeb;
+	--red: #e64646;
+	--steel-gray-400: rgba(0, 0, 0, 0.12);
 	--main-radius: 8px;
 }
 

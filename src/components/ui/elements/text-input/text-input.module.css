@@ -1,0 +1,51 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper label {
+	position: relative;
+}
+
+.wrapper span {
+	margin-bottom: 8px;
+	color: var(--placeholder);
+}
+
+.input {
+	width: 100%;
+	background-color: #f2f3f5;
+	border: 0.5px solid var(--steel-gray-400);
+	border-radius: 8px;
+	padding: 12px;
+	outline-color: var(--light-primary);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+	font-family: inherit;
+	color: #818c99;
+}
+
+.errorInput {
+	background-color: var(--light-pink);
+	border: 0.5px solid var(--red);
+	outline-color: var(--red);
+}
+
+.error {
+	margin-top: 8px;
+	color: var(--red);
+}
+
+.icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	fill: #818c99;
+	cursor: pointer;
+}

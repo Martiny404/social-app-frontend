@@ -1,8 +1,28 @@
 import { Button } from '@/components/ui/elements/buttons/button';
+import { Checkbox } from '@/components/ui/elements/checkbox/checkbox';
+import { Input } from '@/components/ui/elements/text-input/text-input';
+import { RadioButton } from '@/components/ui/elements/radio-button/radio-button';
+import { RadioToggle } from '@/components/ui/elements/radio-toggle/radio-toggle';
+import { Select } from '@/components/ui/elements/select/select';
 import { Icon } from '@/components/ui/icons/icon';
 import { Paragraph } from '@/components/ui/typography/paragraph/paragraph';
 import { Title } from '@/components/ui/typography/title/title';
 import { useState } from 'react';
+
+const ops = [
+	{
+		label: 'Челябинск',
+		value: 'челябинск',
+	},
+	{
+		label: 'Москва',
+		value: 'москва',
+	},
+	{
+		label: 'Санкт-Петербург',
+		value: 'санкт-петербург',
+	},
+];
 
 export default function Home() {
 	const [loader, setLoader] = useState<boolean>(false);
@@ -55,6 +75,26 @@ export default function Home() {
 				рыбные тексты. Текста повстречался путь ты пустился подзаголовок вскоре?
 				Домах составитель реторический правилами единственное, города запятой!
 			</Paragraph>
+			<br />
+			<hr />
+			<br />
+			<Checkbox placeholder='Участвую' />
+			<br />
+			<RadioToggle name='age' placeholder='Возраст' />
+			<br />
+
+			<RadioButton name='age' placeholder='Hello' />
+			<br />
+
+			<hr />
+
+			<Select options={ops} />
+
+			<br />
+
+			<hr />
+
+			<Input placeholder='Имя' label='Введите имя' />
 		</div>
 	);
 }

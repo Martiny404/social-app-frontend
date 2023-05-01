@@ -7,6 +7,8 @@ const icons = {
 	filter: 'filter',
 	spinner: 'spinner',
 	basket: 'basket',
+	check: 'check',
+	down: 'down',
 };
 
 export type IconType = keyof typeof icons;
